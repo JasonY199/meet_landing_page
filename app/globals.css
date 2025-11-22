@@ -12,8 +12,39 @@
   --color-slate-900: hsl(240, 21%, 20%);
 
   --color-white: hsl(0, 0%, 98%);
+
+  --breakpoint-xl: 1440px;
 }
 
-.body {
+@layer utilities {
+  .text-preset-1 {
+    @apply font-black leading-[110%] tracking-normal
+            text-[2.5rem] md:text-[3rem] xl:text-[4rem];
+  }
+
+  .text-preset-2 {
+    @apply font-black leading-[110%] tracking-normal
+            text-[2rem] md:text-[2.25rem] xl:text-[2.5rem];
+  }
+
+  .text-preset-3 {
+    @apply font-black leading-[110%] tracking-[0.25rem]
+            text-[0.75rem] md:text-[0.875rem] xl:text-[1rem];
+  }
+
+  /* Tablet+ preset */
+  .text-preset-4 {
+    @apply font-medium leading-[150%] tracking-normal
+            text-[1rem] xl:text-[1.125rem];
+  }
+
+  /* Laptop only preset */
+  .text-preset-5 {
+    @apply font-black leading-[150%] tracking-normal
+            text-[1rem];
+  }
+}
+
+body {
   font-family: var(--font-red-hat-display);
 }
