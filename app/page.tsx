@@ -1,3 +1,5 @@
+import Button from "@/components/Button";
+
 import Image from "next/image";
 
 export default function Home() {
@@ -38,9 +40,11 @@ export default function Home() {
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
-          <div className="flex flex-col gap-4">
-            <button>download</button>
-            <button>what is it?</button>
+          <div className="flex flex-col gap-4 items-center">
+            <Button variant="cyan" version="v1.3">
+              Download
+            </Button>
+            <Button variant="purple">What is it?</Button>
           </div>
         </div>
       </div>
