@@ -24,7 +24,7 @@ export default function Button({ variant, version, children }: ButtonProps) {
 
   return (
     <button
-      className={`${styles.bg} ${styles.hover} text-white rounded-full px-10 py-4 text-preset-5`}
+      className={`${styles.bg} ${styles.hover} text-white rounded-full px-10 py-4 text-preset-5 whitespace-nowrap`}
     >
       {children}
       {version && (
