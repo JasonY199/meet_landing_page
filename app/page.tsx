@@ -14,9 +14,9 @@ export default function Home() {
       {/* Hero Section */}
       <div className="mt-16 mb-8 xl:mb-24 flex flex-wrap gap-y-12 md:gap-y-18 xl:flex-nowrap xl:justify-center xl:items-center xl:gap-8 xl:max-w-[1120px] xl:mx-auto">
         {/* Mobile: Two overflowing images */}
-        <div className="overflow-hidden md:hidden">
-          <div className="flex justify-center gap-[4.53vw]">
-            <div className="relative w-[55.47vw] h-[42.67vw] shrink-0">
+        <div className="md:hidden w-full overflow-hidden">
+          <div className="flex justify-center gap-[4.53vw] min-[375px]:gap-[17px]">
+            <div className="relative w-[55.47vw] h-[42.67vw] min-[375px]:w-[208px] min-[375px]:h-[160px] shrink-0">
               <Image
                 src="/desktop/image-hero-left.png"
                 alt=""
@@ -24,7 +24,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="relative w-[55.47vw] h-[42.67vw] shrink-0">
+            <div className="relative w-[55.47vw] h-[42.67vw] min-[375px]:w-[208px] min-[375px]:h-[160px] shrink-0">
               <Image
                 src="/desktop/image-hero-right.png"
                 alt=""
@@ -36,16 +36,14 @@ export default function Home() {
         </div>
 
         {/* Tablet: Single overflowing image */}
-        <div className="hidden md:block xl:hidden overflow-hidden">
-          <div className="flex justify-center">
-            <div className="relative w-[820px] h-[303px] shrink-0">
-              <Image
-                src="/tablet/image-hero.png"
-                alt=""
-                fill
-                className="object-cover"
-              />
-            </div>
+        <div className="hidden md:flex xl:hidden w-full justify-center">
+          <div className="relative w-full max-w-[820px] h-[303px] shrink-0">
+            <Image
+              src="/tablet/image-hero.png"
+              alt=""
+              fill
+              className="object-cover"
+            />
           </div>
         </div>
 
