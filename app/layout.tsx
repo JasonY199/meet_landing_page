@@ -4,7 +4,7 @@ import "./globals.css";
 
 const redHatDisplay = Red_Hat_Display({
   variable: "--font-red-hat-display",
-  weight: ["300", "900"],
+  weight: ["300", "500", "900"],
   subsets: ["latin"],
 });
 
