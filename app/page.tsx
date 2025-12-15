@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="pt-8 mb-16">
+      <div className="pt-8 mb-[172px]">
         <SectionDivider number="01" />
 
         <div className="mt-16 mx-8 flex flex-col gap-16">
@@ -97,6 +97,36 @@ export default function Home() {
               meetings — all in one workspace. Control who can join with
               invite-only team access, data encryption, and data export.
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative">
+        <div className="absolute -top-[108px] left-1/2 -translate-x-1/2 z-10">
+          <SectionDivider number="02" />
+        </div>
+
+        <div className="relative h-[374px] overflow-hidden">
+          <Image
+            src="/mobile/image-footer.jpg"
+            alt=""
+            fill
+            className="object-cover object-center"
+          />
+          
+          {/* Cyan overlay */}
+          <div className="absolute inset-0 bg-cyan-600 opacity-90" />
+          
+          <div className="relative h-full flex flex-col items-center justify-center gap-6 px-8 text-center text-white">
+            <h2 className="text-preset-2">
+              Experience more together
+            </h2>
+            <p className="text-preset-4">
+              Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+            </p>
+            <Button variant="purple" version="v1.3">
+              Download
+            </Button>
           </div>
         </div>
       </div>
