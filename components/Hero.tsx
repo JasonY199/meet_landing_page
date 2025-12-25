@@ -7,8 +7,8 @@ export default function Hero() {
       className="
         mt-16 mb-8 xl:mb-30 
         flex flex-wrap 
-        gap-y-12 md:gap-y-18 xl:gap-x-8
-        xl:justify-center xl:items-center 
+        gap-y-12 md:gap-y-18 xl:gap-x-32 xl:overflow-hidden
+        xl:justify-center xl:items-center xl:flex-nowrap
         "
     >
       {/* Mobile: Two overflowing images */}
@@ -56,7 +56,7 @@ export default function Hero() {
       </div>
 
       {/* Text content */}
-      <div className="w-full xl:w-[445px] mx-8 md:mx-16 xl:mx-0! flex flex-col gap-6 xl:gap-8 items-center">
+      <div className="w-full xl:min-w-[445px] mx-8 md:mx-16 xl:mx-0! flex flex-col gap-6 xl:gap-8 items-center">
         <h1 className="text-preset-1 flex flex-col text-center">
           <span>Group Chat</span>
           <span>for Everyone</span>
