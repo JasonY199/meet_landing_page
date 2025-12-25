@@ -8,7 +8,7 @@ export default function Hero() {
         mt-16 mb-8 xl:mb-30 
         flex flex-wrap 
         gap-y-12 md:gap-y-18 xl:gap-x-8
-        
+        xl:justify-center xl:items-center 
         "
     >
       {/* Mobile: Two overflowing images */}
