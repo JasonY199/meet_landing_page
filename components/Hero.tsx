@@ -61,7 +61,7 @@ export default function Hero() {
           <span>Group Chat</span>
           <span>for Everyone</span>
         </h1>
-        <p className="text-preset-4 text-center px-3 md:px-0 md:max-w-md">
+        <p className="text-preset-4 text-center max-w-[305px] px-3 md:px-0 md:max-w-md">
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
