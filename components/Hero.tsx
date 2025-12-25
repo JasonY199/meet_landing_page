@@ -8,8 +8,7 @@ export default function Hero() {
         mt-16 mb-8 xl:mb-30 
         flex flex-wrap 
         gap-y-12 md:gap-y-18 xl:gap-x-8
-        xl:flex-nowrap xl:justify-center xl:items-center 
-        xl:max-w-[1120px] xl:mx-auto
+        
         "
     >
       {/* Mobile: Two overflowing images */}
@@ -35,7 +34,7 @@ export default function Hero() {
       </div>
 
       {/* Tablet: Single overflowing image */}
-      <div className="hidden md:flex xl:hidden w-full justify-center">
+      <div className="hidden md:flex xl:hidden! w-full justify-center">
         <div className="relative w-full max-w-[820px] h-[303px] shrink-0">
           <Image
             src="/tablet/image-hero.png"
@@ -57,7 +56,7 @@ export default function Hero() {
       </div>
 
       {/* Text content */}
-      <div className="w-full mx-8 md:mx-16 xl:mx-0! flex flex-col gap-6 xl:gap-8 items-center">
+      <div className="w-full xl:w-[445px] mx-8 md:mx-16 xl:mx-0! flex flex-col gap-6 xl:gap-8 items-center">
         <h1 className="text-preset-1 flex flex-col text-center">
           <span>Group Chat</span>
           <span>for Everyone</span>
