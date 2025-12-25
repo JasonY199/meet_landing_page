@@ -3,11 +3,19 @@ import Button from "@/components/Button";
 
 export default function Hero() {
   return (
-    <div className="mt-16 mb-8 xl:mb-24 flex flex-wrap gap-y-12 md:gap-y-18 xl:flex-nowrap xl:justify-center xl:items-center xl:gap-8 xl:max-w-[1120px] xl:mx-auto">
+    <div
+      className="
+        mt-16 mb-8 xl:mb-30 
+        flex flex-wrap 
+        gap-y-12 md:gap-y-18 xl:gap-x-8
+        xl:flex-nowrap xl:justify-center xl:items-center 
+        xl:max-w-[1120px] xl:mx-auto
+        "
+    >
       {/* Mobile: Two overflowing images */}
       <div className="md:hidden w-full overflow-hidden">
         <div className="flex justify-center gap-[4.53vw] min-[375px]:gap-[17px]">
-          <div className="relative w-[55.47vw] h-[42.67vw] min-[375px]:w-[208px] min-[375px]:h-[160px] shrink-0">
+          <div className="relative w-[55.47vw] h-[42.67vw] min-[375px]:w-52 min-[375px]:h-40 shrink-0">
             <Image
               src="/desktop/image-hero-left.png"
               alt=""
@@ -15,7 +23,7 @@ export default function Hero() {
               className="object-cover"
             />
           </div>
-          <div className="relative w-[55.47vw] h-[42.67vw] min-[375px]:w-[208px] min-[375px]:h-[160px] shrink-0">
+          <div className="relative w-[55.47vw] h-[42.67vw] min-[375px]:w-52 min-[375px]:h-40 shrink-0">
             <Image
               src="/desktop/image-hero-right.png"
               alt=""
@@ -49,7 +57,7 @@ export default function Hero() {
       </div>
 
       {/* Text content */}
-      <div className="w-full mx-8 md:mx-16 xl:mx-0 xl:w-auto flex flex-col gap-6 xl:gap-8 items-center">
+      <div className="w-full mx-8 md:mx-16 xl:mx-0! flex flex-col gap-6 xl:gap-8 items-center">
         <h1 className="text-preset-1 flex flex-col text-center">
           <span>Group Chat</span>
           <span>for Everyone</span>
