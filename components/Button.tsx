@@ -10,12 +10,12 @@ export default function Button({ variant, version, children }: ButtonProps) {
   const variantStyles = {
     cyan: {
       bg: "bg-cyan-600",
-      hover: "hover:bg-cyan-300",
+      hover: "hover:bg-cyan-400",
       versionText: "text-cyan-300",
     },
     purple: {
       bg: "bg-purple-600",
-      hover: "hover:bg-purple-300",
+      hover: "hover:bg-purple-400",
       versionText: "text-purple-300",
     },
   };
